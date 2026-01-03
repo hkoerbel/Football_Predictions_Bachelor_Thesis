@@ -35,7 +35,7 @@ This script creates data files ready for models leveraging a form parameter and 
 
 
 ## V3_09_Create_Models
-In this script, the prediction models are trained. For each version one XGBoost and two Random Forest models (one time with the randomForest package, one time with the ranger package) are trained. Additionally, performance metrics are calculated and the models safed as rds files.
+In this script, the prediction models are trained. For each version one XGBoost and two Random Forest models (one time with the randomforest package, one time with the ranger package) are trained. Additionally, performance metrics are calculated and the models safed as rds files.
 
 
 ## V3_10_Calculate_Bookies_Performance
