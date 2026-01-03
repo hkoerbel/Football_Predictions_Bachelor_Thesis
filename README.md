@@ -6,7 +6,7 @@ One of the data sources for this project was FBref. Data can there be accessed v
 
 
 ## V3_02_Import_Data_FBref
-This script leverages the URLs collected in *V3_01_Import URLs FBref* to import data from FBref.
+This script leverages the URLs collected in *V3_01_Import_URLs_FBref* to import data from FBref.
 
 
 ## V3_03_Fusion_FBref_Games_to_1_line_per_Game
