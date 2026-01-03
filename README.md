@@ -1,7 +1,7 @@
 # Football_Predictions_-Bachelor_Thesis-
 This repository serves as storage for the code files leveraged for predicting football games over the course of a bachelor thesis at WU Vienna. The files contained serve the following purposes.
 
-## V3_01_Import URLs FBref
+## V3_01_Import_URLs_FBref
 One of the data sources for this project was FBref. Data can there be accessed via specific sub-pages on the website, which hold information and statistics to different games. Therefore, for each game, an URL is needed before data can be collected. This script collects the URLs for the games of interest.
 
 
