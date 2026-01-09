@@ -305,7 +305,7 @@ train_xgboost_model <- function(mm_train, y_train) {
   params <- list(
     objective = "multi:softprob", # multiclass classification with probabilities for different classes
     num_class = 3, # number of classes
-    eval_metric = "mlogloss", # optimise multiclass log loss 
+    eval_metric = "mlogloss", # multiclass log loss 
     eta = 0.05, # learning rate
     max_depth = 6, # maximum tree depth
     subsample = 0.8, # only use random 80% subsample of rows per tree
@@ -697,3 +697,4 @@ for (i in seq_along(pairs)) {
 
 message("Done. Results saved to: model_results.csv")
 message("Models saved in folder: models/")
+
