@@ -310,7 +310,7 @@ train_xgboost_model <- function(mm_train, y_train) {
     max_depth = 6, # maximum tree depth
     subsample = 0.8, # only use random 80% subsample of rows per tree
     colsample_bytree = 0.8, # only use random 80% of features per tree
-    min_child_weight = 1,
+    min_child_weight = 1, # soft barrier; allowing more splits
     seed = 123, # for reproducibility
     nthread = 1 # no parallel calculations for cleaner reproducibility
   )
@@ -697,4 +697,5 @@ for (i in seq_along(pairs)) {
 
 message("Done. Results saved to: model_results.csv")
 message("Models saved in folder: models/")
+
 
