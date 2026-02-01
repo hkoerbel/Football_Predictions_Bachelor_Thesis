@@ -1,5 +1,26 @@
-# Football_Predictions_-Bachelor_Thesis-
-This repository serves as storage for the code files leveraged for predicting football games over the course of a bachelor thesis at WU Vienna. The files contained serve the following purposes.
+# Football_Predictions_Bachelor_Thesis
+
+# Project Overview
+The primary goal of this project is to predict football match outcomes (Home Win, Draw, Away Win) for the 2024/25 season of the English Premier League. The project compares different model architectures and evaluates them using both statistical metrics and economic betting strategies. For detailed information the thesis is attached in the repository.
+
+# Key Features & Methodology
+- Machine Learning Models: Implementation of XGBoost and Random Forest (via R packages randomForest, ranger, and xgboost).
+- Feature Engineering:
+    - Utilization of 94 play-specific variables per team, covering offensive, defensive, and playmaking statistics.
+    - Integration of the last 5 games as temporal components to allow the models to learn historical importance.
+    - Calculation of a dynamic form parameter based on a "stealing" parameter γ, which reflects recent team strength relative to opponents.
+    - Inclusion of betting odds as explanatory variables.
+- Data Sources: Data was retrieved from football-data.co.uk and fbref.com (scraped via the worldfootballR package).
+
+# Core Results
+- Performance Enhancement: The results indicate that including both betting odds and the form parameter improves prediction quality, as measured by the Ranked Probability Score (RPS).
+- Model Comparison: While XGBoost models were more consistent in predicting at least some draws, Random Forest models achieved overall lower (better) RPS values.
+- RPS: The best-performing model achieved a RPS of 0.2144, almost reaching prediction quality as good as the bookmakers (0.2023).
+- Accuracy: The best-performing model reached an accuracy of 52.89%, coming very close to the results achieved by the bookmakers (53.50%).
+- Economic Evaluation: A positive return of up to 65% was achieved over the course of one season. However, the strategy is not considered risk-safe, as the 95% confidence interval for returns included negative values.
+
+# Code
+The codefiles contained serve the following purposes.
 
 ## V3_01_Import_URLs_FBref
 One of the data sources for this project was FBref. Data can there be accessed via specific sub-pages on the website, which hold information and statistics to different games. Therefore, for each game, an URL is needed before data can be collected. This script collects the URLs for the games of interest.
